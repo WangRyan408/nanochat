@@ -1,6 +1,6 @@
-[2mResolved [1m91 packages[0m [2min 1ms[0m[0m
+[2mResolved [1m91 packages[0m [2min 0.96ms[0m[0m
 [2mUninstalled [1m5 packages[0m [2min 84ms[0m[0m
-░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/4] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/4] [2mnanochat==0.1.0 (from file:///root/nanochat)                                                                                                                                                               [0m[2K█████░░░░░░░░░░░░░░░ [1/4] [2mnanochat==0.1.0 (from file:///root/nanochat)                                                                                                                                                               [0m[2K█████░░░░░░░░░░░░░░░ [1/4] [2mnvidia-nccl-cu12==2.27.3                                                                                                                                                                                   [0m[2K██████████░░░░░░░░░░ [2/4] [2mnvidia-nccl-cu12==2.27.3                                                                                                                                                                                   [0m[2K██████████░░░░░░░░░░ [2/4] [2mtriton==3.4.0                                                                                                                                                                                              [0m[2K███████████████░░░░░ [3/4] [2mtriton==3.4.0                                                                                                                                                                                              [0m[2K███████████████░░░░░ [3/4] [2mtorch==2.8.0+cu128                                                                                                                                                                                         [0m[2K████████████████████ [4/4] [2mtorch==2.8.0+cu128                                                                                                                                                                                         [0m[2K[2mInstalled [1m4 packages[0m [2min 87ms[0m[0m
+░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/4] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/4] [2mnanochat==0.1.0 (from file:///root/nanochat)                                                                                                                                                               [0m[2K█████░░░░░░░░░░░░░░░ [1/4] [2mnanochat==0.1.0 (from file:///root/nanochat)                                                                                                                                                               [0m[2K█████░░░░░░░░░░░░░░░ [1/4] [2mnvidia-nccl-cu12==2.27.3                                                                                                                                                                                   [0m[2K██████████░░░░░░░░░░ [2/4] [2mnvidia-nccl-cu12==2.27.3                                                                                                                                                                                   [0m[2K██████████░░░░░░░░░░ [2/4] [2mtriton==3.4.0                                                                                                                                                                                              [0m[2K███████████████░░░░░ [3/4] [2mtriton==3.4.0                                                                                                                                                                                              [0m[2K███████████████░░░░░ [3/4] [2mtorch==2.8.0+cu128                                                                                                                                                                                         [0m[2K████████████████████ [4/4] [2mtorch==2.8.0+cu128                                                                                                                                                                                         [0m[2K[2mInstalled [1m4 packages[0m [2min 85ms[0m[0m
  [33m~[39m [1mnanochat[0m[2m==0.1.0 (from file:///root/nanochat)[0m
  [31m-[39m [1mnvidia-nccl-cu12[0m[2m==2.27.5[0m
  [32m+[39m [1mnvidia-nccl-cu12[0m[2m==2.27.3[0m
@@ -37,22 +37,22 @@ This is usually done by running one of the following (note the leading DOT):
 . "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
 source "$HOME/.cargo/env.fish"  # For fish
 source $"($nu.home-path)/.cargo/env.nu"  # For nushell
-[2mUninstalled [1m1 package[0m [2min 72ms[0m[0m
-░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/1] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/1] [2mtorch==2.9.0                                                                                                                                                                                               [0m[2K████████████████████ [1/1] [2mtorch==2.9.0                                                                                                                                                                                               [0m[2K[2mInstalled [1m1 package[0m [2min 86ms[0m[0m
+[2mUninstalled [1m1 package[0m [2min 73ms[0m[0m
+░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/1] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/1] [2mtorch==2.9.0                                                                                                                                                                                               [0m[2K████████████████████ [1/1] [2mtorch==2.9.0                                                                                                                                                                                               [0m[2K[2mInstalled [1m1 package[0m [2min 87ms[0m[0m
 📦 Including license file `LICENSE`
 🔗 Found pyo3 bindings
 🐍 Found CPython 3.10 at /root/nanochat/.venv/bin/python
 📡 Using build options bindings from pyproject.toml
-[37m⠋[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠋[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠙[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠙[0m [2mdatasets==4.0.0                                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mfastapi==0.117.1                                                                                                                                                                                                                    [0m[2K[37m⠙[0m [2mfiles-to-prompt==0.6                                                                                                                                                                                                                [0m[2K[37m⠙[0m [2mpsutil==7.1.0                                                                                                                                                                                                                       [0m[2K[37m⠙[0m [2mregex==2025.9.1                                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2msetuptools==80.9.0                                                                                                                                                                                                                  [0m[2K[37m⠙[0m [2mtiktoken==0.11.0                                                                                                                                                                                                                    [0m[2K[37m⠙[0m [2mtokenizers==0.22.0                                                                                                                                                                                                                  [0m[2K[37m⠙[0m [2mtorch==2.9.0                                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cuda-nvrtc-cu12==12.8.93                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-nvrtc-cu12==12.8.93                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-runtime-cu12==12.8.90                                                                                                                                                                                                   [0m[2K[37m⠙[0m [2mnvidia-cuda-runtime-cu12==12.8.90                                                                                                                                                                                                   [0m[2K[37m⠙[0m [2mnvidia-cuda-cupti-cu12==12.8.90                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-cupti-cu12==12.8.90                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cudnn-cu12==9.10.2.21                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cudnn-cu12==9.10.2.21                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cublas-cu12==12.8.4.1                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mpydantic-core==2.33.2                                                                                                                                                                                                               [0m[2K[2mResolved [1m80 packages[0m [2min 87ms[0m[0m
-[2mUninstalled [1m2 packages[0m [2min 2ms[0m[0m
-░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/3] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/3] [2mnvidia-nccl-cu12==2.27.5                                                                                                                                                                                   [0m[2K██████░░░░░░░░░░░░░░ [1/3] [2mnvidia-nccl-cu12==2.27.5                                                                                                                                                                                   [0m[2K██████░░░░░░░░░░░░░░ [1/3] [2mnvidia-nvshmem-cu12==3.3.20                                                                                                                                                                                [0m[2K█████████████░░░░░░░ [2/3] [2mnvidia-nvshmem-cu12==3.3.20                                                                                                                                                                                [0m[2K█████████████░░░░░░░ [2/3] [2mtriton==3.5.0                                                                                                                                                                                              [0m[2K████████████████████ [3/3] [2mtriton==3.5.0                                                                                                                                                                                              [0m[2K[2mInstalled [1m3 packages[0m [2min 5ms[0m[0m
+[37m⠋[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠋[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠙[0m [2mResolving dependencies...                                                                                                                                                                                                           [0m[2K[37m⠙[0m [2mdatasets==4.0.0                                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mfastapi==0.117.1                                                                                                                                                                                                                    [0m[2K[37m⠙[0m [2mfiles-to-prompt==0.6                                                                                                                                                                                                                [0m[2K[37m⠙[0m [2mpsutil==7.1.0                                                                                                                                                                                                                       [0m[2K[37m⠙[0m [2mregex==2025.9.1                                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2msetuptools==80.9.0                                                                                                                                                                                                                  [0m[2K[37m⠙[0m [2mtiktoken==0.11.0                                                                                                                                                                                                                    [0m[2K[37m⠙[0m [2mtokenizers==0.22.0                                                                                                                                                                                                                  [0m[2K[37m⠙[0m [2mtorch==2.9.0                                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cuda-nvrtc-cu12==12.8.93                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-nvrtc-cu12==12.8.93                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-runtime-cu12==12.8.90                                                                                                                                                                                                   [0m[2K[37m⠙[0m [2mnvidia-cuda-runtime-cu12==12.8.90                                                                                                                                                                                                   [0m[2K[37m⠙[0m [2mnvidia-cuda-cupti-cu12==12.8.90                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cuda-cupti-cu12==12.8.90                                                                                                                                                                                                     [0m[2K[37m⠙[0m [2mnvidia-cudnn-cu12==9.10.2.21                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cudnn-cu12==9.10.2.21                                                                                                                                                                                                        [0m[2K[37m⠙[0m [2mnvidia-cublas-cu12==12.8.4.1                                                                                                                                                                                                        [0m[2K[2mResolved [1m80 packages[0m [2min 25ms[0m[0m
+[2mUninstalled [1m2 packages[0m [2min 3ms[0m[0m
+░░░░░░░░░░░░░░░░░░░░ [0/0] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/3] [2mInstalling wheels...                                                                                                                                                                                       [0m[2K░░░░░░░░░░░░░░░░░░░░ [0/3] [2mnvidia-nccl-cu12==2.27.5                                                                                                                                                                                   [0m[2K██████░░░░░░░░░░░░░░ [1/3] [2mnvidia-nccl-cu12==2.27.5                                                                                                                                                                                   [0m[2K██████░░░░░░░░░░░░░░ [1/3] [2mnvidia-nvshmem-cu12==3.3.20                                                                                                                                                                                [0m[2K█████████████░░░░░░░ [2/3] [2mnvidia-nvshmem-cu12==3.3.20                                                                                                                                                                                [0m[2K█████████████░░░░░░░ [2/3] [2mtriton==3.5.0                                                                                                                                                                                              [0m[2K████████████████████ [3/3] [2mtriton==3.5.0                                                                                                                                                                                              [0m[2K[2mInstalled [1m3 packages[0m [2min 6ms[0m[0m
  [31m-[39m [1mnvidia-nccl-cu12[0m[2m==2.27.3[0m
  [32m+[39m [1mnvidia-nccl-cu12[0m[2m==2.27.5[0m
  [32m+[39m [1mnvidia-nvshmem-cu12[0m[2m==3.3.20[0m
  [31m-[39m [1mtriton[0m[2m==3.4.0[0m
  [32m+[39m [1mtriton[0m[2m==3.5.0[0m
 [1m[92m    Finished[0m `release` profile [optimized] target(s) in 0.02s
-📦 Built wheel for CPython 3.10 to /tmp/.tmp7GtYYF/nanochat-0.1.0-cp310-cp310-linux_x86_64.whl
+📦 Built wheel for CPython 3.10 to /tmp/.tmpp9Z3M5/nanochat-0.1.0-cp310-cp310-linux_x86_64.whl
 ✏️ Setting installed package as editable
 🛠 Installed nanochat-0.1.0
 Downloading 8 shards using 4 workers...
@@ -64,9 +64,11 @@ Skipping /root/.cache/nanochat/base_data/shard_00002.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00003.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00004.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00005.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00007.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00006.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00007.parquet (already exists)
 Done! Downloaded: 8/8 shards to /root/.cache/nanochat/base_data
+/root/nanochat/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
 Downloading 240 shards using 4 workers...
 Target directory: /root/.cache/nanochat/base_data
 
@@ -99,20 +101,35 @@ Skipping /root/.cache/nanochat/base_data/shard_00025.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00026.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00027.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00028.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00045.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00029.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00030.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00031.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00045.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00032.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00046.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00033.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00047.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00034.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00048.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00035.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00049.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00036.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00050.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00037.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00051.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00038.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00052.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00039.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00053.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00040.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00054.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00041.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00055.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00042.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00056.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00043.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00057.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00044.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00058.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00059.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00060.parquet (already exists)
@@ -130,180 +147,165 @@ Skipping /root/.cache/nanochat/base_data/shard_00071.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00072.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00073.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00074.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00030.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00031.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00032.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00033.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00034.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00035.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00036.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00037.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00038.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00039.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00040.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00041.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00042.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00043.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00044.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00105.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00106.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00107.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00108.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00109.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00110.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00111.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00090.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00112.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00091.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00113.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00092.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00114.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00093.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00115.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00094.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00116.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00095.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00117.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00096.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00118.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00097.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00119.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00098.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00099.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00100.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00101.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00102.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00103.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00120.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00104.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00121.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00122.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00075.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00123.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00124.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00076.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00125.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00077.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00135.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00126.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00127.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00078.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00128.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00129.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00079.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00150.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00130.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00080.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00136.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00151.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00131.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00081.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00152.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00132.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00137.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00082.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00153.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00133.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00138.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00083.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00154.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00134.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00139.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00155.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00105.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00084.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00140.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00156.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00106.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00085.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00157.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00141.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00107.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00086.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00158.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00142.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00108.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00087.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00159.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00143.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00120.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00109.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00088.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00160.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00144.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00121.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00110.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00089.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00122.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00111.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00123.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00112.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00124.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00113.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00125.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00114.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00126.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00115.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00127.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00116.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00128.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00117.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00129.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00118.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00130.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00119.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00131.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00135.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00132.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00136.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00133.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00137.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00134.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00138.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00150.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00139.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00151.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00140.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00152.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00141.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00153.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00142.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00154.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00143.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00155.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00165.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00161.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00145.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00144.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00156.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00166.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00162.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00146.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00145.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00157.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00167.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00163.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00147.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00146.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00158.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00168.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00164.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00148.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00147.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00090.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00159.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00169.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00149.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00148.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00160.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00170.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00149.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00091.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00161.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00171.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00092.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00162.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00172.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00093.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00163.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00173.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00094.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00164.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00174.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00180.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00095.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00175.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00195.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00181.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00180.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00096.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00176.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00196.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00182.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00181.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00097.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00177.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00197.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00183.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00182.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00098.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00195.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00178.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00198.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00184.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00183.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00196.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00179.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00199.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00099.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00184.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00197.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00100.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00185.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00200.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00198.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00101.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00186.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00201.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00199.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00102.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00187.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00202.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00188.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00200.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00103.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00210.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00203.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00189.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00188.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00201.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00104.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00211.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00204.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00190.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00189.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00202.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00212.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00205.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00191.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00190.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00203.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00213.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00206.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00192.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00191.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00204.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00214.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00207.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00193.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00192.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00205.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00215.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00208.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00194.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00225.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00193.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00206.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00216.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00209.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00226.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00194.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00207.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00217.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00227.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00208.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00218.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00228.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00209.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00219.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00229.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00220.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00230.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00221.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00231.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00222.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00232.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00225.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00223.parquet (already exists)
-Skipping /root/.cache/nanochat/base_data/shard_00233.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00226.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00224.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00227.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00228.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00229.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00230.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00231.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00232.parquet (already exists)
+Skipping /root/.cache/nanochat/base_data/shard_00233.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00234.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00235.parquet (already exists)
 Skipping /root/.cache/nanochat/base_data/shard_00236.parquet (already exists)
@@ -314,114 +316,114 @@ Done! Downloaded: 240/240 shards to /root/.cache/nanochat/base_data
 max_chars: 2,000,000,000
 doc_cap: 10,000
 vocab_size: 65,536
-2025-12-01 23:41:33,473 - rustbpe - [32m[1mINFO[0m - Processing sequences from iterator (buffer_size: 8192)
-^[[B^[[B^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B2025-12-01 23:42:04,124 - rustbpe - [32m[1mINFO[0m - Processed 532496 sequences total, 2233873 unique
-2025-12-01 23:42:04,252 - rustbpe - [32m[1mINFO[0m - Starting BPE training: 65271 merges to compute
-2025-12-01 23:42:04,252 - rustbpe - [32m[1mINFO[0m - Computing initial pair counts from 2233873 unique sequences
-2025-12-01 23:42:05,981 - rustbpe - [32m[1mINFO[0m - Building heap with 18337 unique pairs
-2025-12-01 23:42:05,982 - rustbpe - [32m[1mINFO[0m - Starting merge loop
-2025-12-01 23:42:08,800 - rustbpe - [32m[1mINFO[0m - Progress: [1m1%[0m (653/65271 merges) - Last merge: (32, 568) -> 908 (frequency: 255265)
-2025-12-01 23:42:09,194 - rustbpe - [32m[1mINFO[0m - Progress: [1m2%[0m (1306/65271 merges) - Last merge: (87, 101) -> 1561 (frequency: 110111)
-2025-12-01 23:42:09,407 - rustbpe - [32m[1mINFO[0m - Progress: [1m3%[0m (1959/65271 merges) - Last merge: (1347, 716) -> 2214 (frequency: 67040)
-2025-12-01 23:42:09,610 - rustbpe - [32m[1mINFO[0m - Progress: [1m4%[0m (2611/65271 merges) - Last merge: (714, 280) -> 2866 (frequency: 46401)
-2025-12-01 23:42:09,786 - rustbpe - [32m[1mINFO[0m - Progress: [1m5%[0m (3264/65271 merges) - Last merge: (1108, 289) -> 3519 (frequency: 34743)
-2025-12-01 23:42:09,932 - rustbpe - [32m[1mINFO[0m - Progress: [1m6%[0m (3917/65271 merges) - Last merge: (420, 262) -> 4172 (frequency: 27219)
-2025-12-01 23:42:10,038 - rustbpe - [32m[1mINFO[0m - Progress: [1m7%[0m (4569/65271 merges) - Last merge: (116, 97) -> 4824 (frequency: 22123)
-2025-12-01 23:42:10,171 - rustbpe - [32m[1mINFO[0m - Progress: [1m8%[0m (5222/65271 merges) - Last merge: (1381, 108) -> 5477 (frequency: 18395)
-2025-12-01 23:42:10,272 - rustbpe - [32m[1mINFO[0m - Progress: [1m9%[0m (5875/65271 merges) - Last merge: (3848, 5283) -> 6130 (frequency: 15547)
-2025-12-01 23:42:10,380 - rustbpe - [32m[1mINFO[0m - Progress: [1m10%[0m (6528/65271 merges) - Last merge: (324, 1426) -> 6783 (frequency: 13336)
-2025-12-01 23:42:10,451 - rustbpe - [32m[1mINFO[0m - Progress: [1m11%[0m (7180/65271 merges) - Last merge: (5059, 2488) -> 7435 (frequency: 11636)
-2025-12-01 23:42:10,537 - rustbpe - [32m[1mINFO[0m - Progress: [1m12%[0m (7833/65271 merges) - Last merge: (509, 273) -> 8088 (frequency: 10199)
-2025-12-01 23:42:10,596 - rustbpe - [32m[1mINFO[0m - Progress: [1m13%[0m (8486/65271 merges) - Last merge: (313, 7877) -> 8741 (frequency: 8981)
-2025-12-01 23:42:10,671 - rustbpe - [32m[1mINFO[0m - Progress: [1m14%[0m (9138/65271 merges) - Last merge: (4870, 109) -> 9393 (frequency: 8021)
-2025-12-01 23:42:10,736 - rustbpe - [32m[1mINFO[0m - Progress: [1m15%[0m (9791/65271 merges) - Last merge: (1045, 3484) -> 10046 (frequency: 7217)
-2025-12-01 23:42:10,799 - rustbpe - [32m[1mINFO[0m - Progress: [1m16%[0m (10444/65271 merges) - Last merge: (372, 34) -> 10699 (frequency: 6515)
-2025-12-01 23:42:10,849 - rustbpe - [32m[1mINFO[0m - Progress: [1m17%[0m (11097/65271 merges) - Last merge: (46, 8940) -> 11352 (frequency: 5894)
-2025-12-01 23:42:10,910 - rustbpe - [32m[1mINFO[0m - Progress: [1m18%[0m (11749/65271 merges) - Last merge: (296, 2782) -> 12004 (frequency: 5367)
-2025-12-01 23:42:10,957 - rustbpe - [32m[1mINFO[0m - Progress: [1m19%[0m (12402/65271 merges) - Last merge: (662, 9820) -> 12657 (frequency: 4972)
-2025-12-01 23:42:10,997 - rustbpe - [32m[1mINFO[0m - Progress: [1m20%[0m (13055/65271 merges) - Last merge: (265, 2166) -> 13310 (frequency: 4591)
-2025-12-01 23:42:11,045 - rustbpe - [32m[1mINFO[0m - Progress: [1m21%[0m (13707/65271 merges) - Last merge: (317, 380) -> 13962 (frequency: 4272)
-2025-12-01 23:42:11,107 - rustbpe - [32m[1mINFO[0m - Progress: [1m22%[0m (14360/65271 merges) - Last merge: (6986, 1695) -> 14615 (frequency: 3966)
-2025-12-01 23:42:11,153 - rustbpe - [32m[1mINFO[0m - Progress: [1m23%[0m (15013/65271 merges) - Last merge: (12113, 12401) -> 15268 (frequency: 3697)
-2025-12-01 23:42:11,196 - rustbpe - [32m[1mINFO[0m - Progress: [1m24%[0m (15666/65271 merges) - Last merge: (949, 12073) -> 15921 (frequency: 3446)
-2025-12-01 23:42:11,248 - rustbpe - [32m[1mINFO[0m - Progress: [1m25%[0m (16318/65271 merges) - Last merge: (420, 263) -> 16573 (frequency: 3226)
-2025-12-01 23:42:11,323 - rustbpe - [32m[1mINFO[0m - Progress: [1m26%[0m (16971/65271 merges) - Last merge: (342, 263) -> 17226 (frequency: 3027)
-2025-12-01 23:42:11,359 - rustbpe - [32m[1mINFO[0m - Progress: [1m27%[0m (17624/65271 merges) - Last merge: (441, 3460) -> 17879 (frequency: 2852)
-2025-12-01 23:42:11,412 - rustbpe - [32m[1mINFO[0m - Progress: [1m28%[0m (18276/65271 merges) - Last merge: (313, 13271) -> 18531 (frequency: 2699)
-2025-12-01 23:42:11,453 - rustbpe - [32m[1mINFO[0m - Progress: [1m29%[0m (18929/65271 merges) - Last merge: (45, 450) -> 19184 (frequency: 2546)
-2025-12-01 23:42:11,484 - rustbpe - [32m[1mINFO[0m - Progress: [1m30%[0m (19582/65271 merges) - Last merge: (428, 3299) -> 19837 (frequency: 2400)
-2025-12-01 23:42:11,508 - rustbpe - [32m[1mINFO[0m - Progress: [1m31%[0m (20235/65271 merges) - Last merge: (313, 274) -> 20490 (frequency: 2276)
-2025-12-01 23:42:11,544 - rustbpe - [32m[1mINFO[0m - Progress: [1m32%[0m (20887/65271 merges) - Last merge: (2804, 293) -> 21142 (frequency: 2155)
-2025-12-01 23:42:11,571 - rustbpe - [32m[1mINFO[0m - Progress: [1m33%[0m (21540/65271 merges) - Last merge: (629, 321) -> 21795 (frequency: 2049)
-2025-12-01 23:42:11,600 - rustbpe - [32m[1mINFO[0m - Progress: [1m34%[0m (22193/65271 merges) - Last merge: (10820, 363) -> 22448 (frequency: 1945)
-2025-12-01 23:42:11,632 - rustbpe - [32m[1mINFO[0m - Progress: [1m35%[0m (22845/65271 merges) - Last merge: (15499, 10886) -> 23100 (frequency: 1850)
-2025-12-01 23:42:11,656 - rustbpe - [32m[1mINFO[0m - Progress: [1m36%[0m (23498/65271 merges) - Last merge: (5037, 756) -> 23753 (frequency: 1758)
-2025-12-01 23:42:11,692 - rustbpe - [32m[1mINFO[0m - Progress: [1m37%[0m (24151/65271 merges) - Last merge: (1811, 1627) -> 24406 (frequency: 1673)
-2025-12-01 23:42:11,718 - rustbpe - [32m[1mINFO[0m - Progress: [1m38%[0m (24803/65271 merges) - Last merge: (10235, 3181) -> 25058 (frequency: 1598)
-2025-12-01 23:42:11,750 - rustbpe - [32m[1mINFO[0m - Progress: [1m39%[0m (25456/65271 merges) - Last merge: (16956, 1121) -> 25711 (frequency: 1525)
-2025-12-01 23:42:11,780 - rustbpe - [32m[1mINFO[0m - Progress: [1m40%[0m (26109/65271 merges) - Last merge: (2419, 636) -> 26364 (frequency: 1462)
-2025-12-01 23:42:11,807 - rustbpe - [32m[1mINFO[0m - Progress: [1m41%[0m (26762/65271 merges) - Last merge: (2549, 1122) -> 27017 (frequency: 1402)
-2025-12-01 23:42:11,837 - rustbpe - [32m[1mINFO[0m - Progress: [1m42%[0m (27414/65271 merges) - Last merge: (99, 1091) -> 27669 (frequency: 1343)
-2025-12-01 23:42:11,864 - rustbpe - [32m[1mINFO[0m - Progress: [1m43%[0m (28067/65271 merges) - Last merge: (216, 170) -> 28322 (frequency: 1288)
-2025-12-01 23:42:11,894 - rustbpe - [32m[1mINFO[0m - Progress: [1m44%[0m (28720/65271 merges) - Last merge: (402, 263) -> 28975 (frequency: 1233)
-2025-12-01 23:42:11,919 - rustbpe - [32m[1mINFO[0m - Progress: [1m45%[0m (29372/65271 merges) - Last merge: (19389, 466) -> 29627 (frequency: 1190)
-2025-12-01 23:42:11,945 - rustbpe - [32m[1mINFO[0m - Progress: [1m46%[0m (30025/65271 merges) - Last merge: (4600, 76) -> 30280 (frequency: 1145)
-2025-12-01 23:42:11,965 - rustbpe - [32m[1mINFO[0m - Progress: [1m47%[0m (30678/65271 merges) - Last merge: (304, 849) -> 30933 (frequency: 1100)
-2025-12-01 23:42:11,989 - rustbpe - [32m[1mINFO[0m - Progress: [1m48%[0m (31331/65271 merges) - Last merge: (5090, 596) -> 31586 (frequency: 1063)
-2025-12-01 23:42:12,008 - rustbpe - [32m[1mINFO[0m - Progress: [1m49%[0m (31983/65271 merges) - Last merge: (21702, 9305) -> 32238 (frequency: 1026)
-2025-12-01 23:42:12,027 - rustbpe - [32m[1mINFO[0m - Progress: [1m50%[0m (32636/65271 merges) - Last merge: (78, 11441) -> 32891 (frequency: 988)
-2025-12-01 23:42:12,050 - rustbpe - [32m[1mINFO[0m - Progress: [1m51%[0m (33289/65271 merges) - Last merge: (17782, 373) -> 33544 (frequency: 956)
-2025-12-01 23:42:12,071 - rustbpe - [32m[1mINFO[0m - Progress: [1m52%[0m (33941/65271 merges) - Last merge: (6872, 474) -> 34196 (frequency: 925)
-2025-12-01 23:42:12,091 - rustbpe - [32m[1mINFO[0m - Progress: [1m53%[0m (34594/65271 merges) - Last merge: (13160, 1816) -> 34849 (frequency: 893)
-2025-12-01 23:42:12,112 - rustbpe - [32m[1mINFO[0m - Progress: [1m54%[0m (35247/65271 merges) - Last merge: (336, 1855) -> 35502 (frequency: 865)
-2025-12-01 23:42:12,142 - rustbpe - [32m[1mINFO[0m - Progress: [1m55%[0m (35900/65271 merges) - Last merge: (446, 276) -> 36155 (frequency: 838)
-2025-12-01 23:42:12,156 - rustbpe - [32m[1mINFO[0m - Progress: [1m56%[0m (36552/65271 merges) - Last merge: (337, 1876) -> 36807 (frequency: 811)
-2025-12-01 23:42:12,172 - rustbpe - [32m[1mINFO[0m - Progress: [1m57%[0m (37205/65271 merges) - Last merge: (27812, 319) -> 37460 (frequency: 787)
-2025-12-01 23:42:12,188 - rustbpe - [32m[1mINFO[0m - Progress: [1m58%[0m (37858/65271 merges) - Last merge: (2181, 2035) -> 38113 (frequency: 763)
-2025-12-01 23:42:12,211 - rustbpe - [32m[1mINFO[0m - Progress: [1m59%[0m (38510/65271 merges) - Last merge: (529, 35912) -> 38765 (frequency: 739)
-2025-12-01 23:42:12,227 - rustbpe - [32m[1mINFO[0m - Progress: [1m60%[0m (39163/65271 merges) - Last merge: (1626, 758) -> 39418 (frequency: 717)
-2025-12-01 23:42:12,252 - rustbpe - [32m[1mINFO[0m - Progress: [1m61%[0m (39816/65271 merges) - Last merge: (2884, 36357) -> 40071 (frequency: 696)
-2025-12-01 23:42:12,266 - rustbpe - [32m[1mINFO[0m - Progress: [1m62%[0m (40469/65271 merges) - Last merge: (22732, 852) -> 40724 (frequency: 676)
-2025-12-01 23:42:12,311 - rustbpe - [32m[1mINFO[0m - Progress: [1m63%[0m (41121/65271 merges) - Last merge: (2718, 80) -> 41376 (frequency: 656)
-2025-12-01 23:42:12,332 - rustbpe - [32m[1mINFO[0m - Progress: [1m64%[0m (41774/65271 merges) - Last merge: (5190, 424) -> 42029 (frequency: 637)
-2025-12-01 23:42:12,351 - rustbpe - [32m[1mINFO[0m - Progress: [1m65%[0m (42427/65271 merges) - Last merge: (1598, 12834) -> 42682 (frequency: 619)
-2025-12-01 23:42:12,372 - rustbpe - [32m[1mINFO[0m - Progress: [1m66%[0m (43079/65271 merges) - Last merge: (1929, 2037) -> 43334 (frequency: 602)
-2025-12-01 23:42:12,383 - rustbpe - [32m[1mINFO[0m - Progress: [1m67%[0m (43732/65271 merges) - Last merge: (37877, 14879) -> 43987 (frequency: 585)
-2025-12-01 23:42:12,402 - rustbpe - [32m[1mINFO[0m - Progress: [1m68%[0m (44385/65271 merges) - Last merge: (29758, 3004) -> 44640 (frequency: 570)
-2025-12-01 23:42:12,414 - rustbpe - [32m[1mINFO[0m - Progress: [1m69%[0m (45037/65271 merges) - Last merge: (12204, 1404) -> 45292 (frequency: 555)
-2025-12-01 23:42:12,432 - rustbpe - [32m[1mINFO[0m - Progress: [1m70%[0m (45690/65271 merges) - Last merge: (2806, 259) -> 45945 (frequency: 540)
-2025-12-01 23:42:12,450 - rustbpe - [32m[1mINFO[0m - Progress: [1m71%[0m (46343/65271 merges) - Last merge: (9018, 34477) -> 46598 (frequency: 527)
-2025-12-01 23:42:12,465 - rustbpe - [32m[1mINFO[0m - Progress: [1m72%[0m (46996/65271 merges) - Last merge: (420, 8269) -> 47251 (frequency: 513)
-2025-12-01 23:42:12,480 - rustbpe - [32m[1mINFO[0m - Progress: [1m73%[0m (47648/65271 merges) - Last merge: (7466, 282) -> 47903 (frequency: 501)
-2025-12-01 23:42:12,492 - rustbpe - [32m[1mINFO[0m - Progress: [1m74%[0m (48301/65271 merges) - Last merge: (438, 4996) -> 48556 (frequency: 489)
-2025-12-01 23:42:12,505 - rustbpe - [32m[1mINFO[0m - Progress: [1m75%[0m (48954/65271 merges) - Last merge: (4604, 276) -> 49209 (frequency: 478)
-2025-12-01 23:42:12,524 - rustbpe - [32m[1mINFO[0m - Progress: [1m76%[0m (49606/65271 merges) - Last merge: (1632, 13872) -> 49861 (frequency: 466)
-2025-12-01 23:42:12,537 - rustbpe - [32m[1mINFO[0m - Progress: [1m77%[0m (50259/65271 merges) - Last merge: (3250, 8184) -> 50514 (frequency: 455)
-2025-12-01 23:42:12,550 - rustbpe - [32m[1mINFO[0m - Progress: [1m78%[0m (50912/65271 merges) - Last merge: (560, 3010) -> 51167 (frequency: 445)
-2025-12-01 23:42:12,562 - rustbpe - [32m[1mINFO[0m - Progress: [1m79%[0m (51565/65271 merges) - Last merge: (377, 3255) -> 51820 (frequency: 435)
-2025-12-01 23:42:12,580 - rustbpe - [32m[1mINFO[0m - Progress: [1m80%[0m (52217/65271 merges) - Last merge: (37215, 1508) -> 52472 (frequency: 426)
-2025-12-01 23:42:12,592 - rustbpe - [32m[1mINFO[0m - Progress: [1m81%[0m (52870/65271 merges) - Last merge: (14361, 31789) -> 53125 (frequency: 417)
-2025-12-01 23:42:12,604 - rustbpe - [32m[1mINFO[0m - Progress: [1m82%[0m (53523/65271 merges) - Last merge: (18450, 285) -> 53778 (frequency: 408)
-2025-12-01 23:42:12,614 - rustbpe - [32m[1mINFO[0m - Progress: [1m83%[0m (54175/65271 merges) - Last merge: (18546, 431) -> 54430 (frequency: 399)
-2025-12-01 23:42:12,626 - rustbpe - [32m[1mINFO[0m - Progress: [1m84%[0m (54828/65271 merges) - Last merge: (1191, 105) -> 55083 (frequency: 390)
-2025-12-01 23:42:12,639 - rustbpe - [32m[1mINFO[0m - Progress: [1m85%[0m (55481/65271 merges) - Last merge: (377, 112) -> 55736 (frequency: 382)
-2025-12-01 23:42:12,651 - rustbpe - [32m[1mINFO[0m - Progress: [1m86%[0m (56134/65271 merges) - Last merge: (1554, 97) -> 56389 (frequency: 374)
-2025-12-01 23:42:12,666 - rustbpe - [32m[1mINFO[0m - Progress: [1m87%[0m (56786/65271 merges) - Last merge: (35419, 791) -> 57041 (frequency: 366)
-2025-12-01 23:42:12,679 - rustbpe - [32m[1mINFO[0m - Progress: [1m88%[0m (57439/65271 merges) - Last merge: (1149, 97) -> 57694 (frequency: 358)
-2025-12-01 23:42:12,689 - rustbpe - [32m[1mINFO[0m - Progress: [1m89%[0m (58092/65271 merges) - Last merge: (3105, 755) -> 58347 (frequency: 351)
-2025-12-01 23:42:12,704 - rustbpe - [32m[1mINFO[0m - Progress: [1m90%[0m (58744/65271 merges) - Last merge: (701, 44294) -> 58999 (frequency: 344)
-2025-12-01 23:42:12,717 - rustbpe - [32m[1mINFO[0m - Progress: [1m91%[0m (59397/65271 merges) - Last merge: (441, 431) -> 59652 (frequency: 337)
-2025-12-01 23:42:12,729 - rustbpe - [32m[1mINFO[0m - Progress: [1m92%[0m (60050/65271 merges) - Last merge: (111, 69) -> 60305 (frequency: 330)
-2025-12-01 23:42:12,741 - rustbpe - [32m[1mINFO[0m - Progress: [1m93%[0m (60703/65271 merges) - Last merge: (313, 25817) -> 60958 (frequency: 323)
-2025-12-01 23:42:12,751 - rustbpe - [32m[1mINFO[0m - Progress: [1m94%[0m (61355/65271 merges) - Last merge: (5375, 7100) -> 61610 (frequency: 317)
-2025-12-01 23:42:12,761 - rustbpe - [32m[1mINFO[0m - Progress: [1m95%[0m (62008/65271 merges) - Last merge: (3460, 122) -> 62263 (frequency: 311)
-2025-12-01 23:42:12,773 - rustbpe - [32m[1mINFO[0m - Progress: [1m96%[0m (62661/65271 merges) - Last merge: (4719, 1622) -> 62916 (frequency: 305)
-2025-12-01 23:42:12,782 - rustbpe - [32m[1mINFO[0m - Progress: [1m97%[0m (63313/65271 merges) - Last merge: (58949, 46565) -> 63568 (frequency: 300)
-2025-12-01 23:42:12,792 - rustbpe - [32m[1mINFO[0m - Progress: [1m98%[0m (63966/65271 merges) - Last merge: (45, 391) -> 64221 (frequency: 293)
-2025-12-01 23:42:12,804 - rustbpe - [32m[1mINFO[0m - Progress: [1m99%[0m (64619/65271 merges) - Last merge: (1588, 18644) -> 64874 (frequency: 288)
-2025-12-01 23:42:12,813 - rustbpe - [32m[1mINFO[0m - Progress: [1m100%[0m (65271/65271 merges) - Last merge: (1594, 552) -> 65526 (frequency: 283)
-2025-12-01 23:42:12,813 - rustbpe - [32m[1mINFO[0m - Finished training: 65271 merges completed
-Training time: 39.82s
+2025-12-02 00:18:06,332 - rustbpe - [32m[1mINFO[0m - Processing sequences from iterator (buffer_size: 8192)
+2025-12-02 00:18:36,468 - rustbpe - [32m[1mINFO[0m - Processed 532496 sequences total, 2233873 unique
+2025-12-02 00:18:36,587 - rustbpe - [32m[1mINFO[0m - Starting BPE training: 65271 merges to compute
+2025-12-02 00:18:36,587 - rustbpe - [32m[1mINFO[0m - Computing initial pair counts from 2233873 unique sequences
+2025-12-02 00:18:38,224 - rustbpe - [32m[1mINFO[0m - Building heap with 18337 unique pairs
+2025-12-02 00:18:38,225 - rustbpe - [32m[1mINFO[0m - Starting merge loop
+2025-12-02 00:18:40,912 - rustbpe - [32m[1mINFO[0m - Progress: [1m1%[0m (653/65271 merges) - Last merge: (32, 568) -> 908 (frequency: 255265)
+2025-12-02 00:18:41,289 - rustbpe - [32m[1mINFO[0m - Progress: [1m2%[0m (1306/65271 merges) - Last merge: (87, 101) -> 1561 (frequency: 110111)
+2025-12-02 00:18:41,499 - rustbpe - [32m[1mINFO[0m - Progress: [1m3%[0m (1959/65271 merges) - Last merge: (1347, 716) -> 2214 (frequency: 67040)
+2025-12-02 00:18:41,704 - rustbpe - [32m[1mINFO[0m - Progress: [1m4%[0m (2611/65271 merges) - Last merge: (714, 280) -> 2866 (frequency: 46401)
+2025-12-02 00:18:41,885 - rustbpe - [32m[1mINFO[0m - Progress: [1m5%[0m (3264/65271 merges) - Last merge: (1108, 289) -> 3519 (frequency: 34743)
+2025-12-02 00:18:42,028 - rustbpe - [32m[1mINFO[0m - Progress: [1m6%[0m (3917/65271 merges) - Last merge: (420, 262) -> 4172 (frequency: 27219)
+2025-12-02 00:18:42,132 - rustbpe - [32m[1mINFO[0m - Progress: [1m7%[0m (4569/65271 merges) - Last merge: (116, 97) -> 4824 (frequency: 22123)
+2025-12-02 00:18:42,265 - rustbpe - [32m[1mINFO[0m - Progress: [1m8%[0m (5222/65271 merges) - Last merge: (1381, 108) -> 5477 (frequency: 18395)
+2025-12-02 00:18:42,365 - rustbpe - [32m[1mINFO[0m - Progress: [1m9%[0m (5875/65271 merges) - Last merge: (3848, 5283) -> 6130 (frequency: 15547)
+2025-12-02 00:18:42,472 - rustbpe - [32m[1mINFO[0m - Progress: [1m10%[0m (6528/65271 merges) - Last merge: (324, 1426) -> 6783 (frequency: 13336)
+2025-12-02 00:18:42,542 - rustbpe - [32m[1mINFO[0m - Progress: [1m11%[0m (7180/65271 merges) - Last merge: (5059, 2488) -> 7435 (frequency: 11636)
+2025-12-02 00:18:42,626 - rustbpe - [32m[1mINFO[0m - Progress: [1m12%[0m (7833/65271 merges) - Last merge: (509, 273) -> 8088 (frequency: 10199)
+2025-12-02 00:18:42,685 - rustbpe - [32m[1mINFO[0m - Progress: [1m13%[0m (8486/65271 merges) - Last merge: (313, 7877) -> 8741 (frequency: 8981)
+2025-12-02 00:18:42,760 - rustbpe - [32m[1mINFO[0m - Progress: [1m14%[0m (9138/65271 merges) - Last merge: (4870, 109) -> 9393 (frequency: 8021)
+2025-12-02 00:18:42,824 - rustbpe - [32m[1mINFO[0m - Progress: [1m15%[0m (9791/65271 merges) - Last merge: (1045, 3484) -> 10046 (frequency: 7217)
+2025-12-02 00:18:42,888 - rustbpe - [32m[1mINFO[0m - Progress: [1m16%[0m (10444/65271 merges) - Last merge: (372, 34) -> 10699 (frequency: 6515)
+2025-12-02 00:18:42,937 - rustbpe - [32m[1mINFO[0m - Progress: [1m17%[0m (11097/65271 merges) - Last merge: (46, 8940) -> 11352 (frequency: 5894)
+2025-12-02 00:18:42,997 - rustbpe - [32m[1mINFO[0m - Progress: [1m18%[0m (11749/65271 merges) - Last merge: (296, 2782) -> 12004 (frequency: 5367)
+2025-12-02 00:18:43,043 - rustbpe - [32m[1mINFO[0m - Progress: [1m19%[0m (12402/65271 merges) - Last merge: (662, 9820) -> 12657 (frequency: 4972)
+2025-12-02 00:18:43,082 - rustbpe - [32m[1mINFO[0m - Progress: [1m20%[0m (13055/65271 merges) - Last merge: (265, 2166) -> 13310 (frequency: 4591)
+2025-12-02 00:18:43,129 - rustbpe - [32m[1mINFO[0m - Progress: [1m21%[0m (13707/65271 merges) - Last merge: (317, 380) -> 13962 (frequency: 4272)
+2025-12-02 00:18:43,191 - rustbpe - [32m[1mINFO[0m - Progress: [1m22%[0m (14360/65271 merges) - Last merge: (6986, 1695) -> 14615 (frequency: 3966)
+2025-12-02 00:18:43,237 - rustbpe - [32m[1mINFO[0m - Progress: [1m23%[0m (15013/65271 merges) - Last merge: (12113, 12401) -> 15268 (frequency: 3697)
+2025-12-02 00:18:43,279 - rustbpe - [32m[1mINFO[0m - Progress: [1m24%[0m (15666/65271 merges) - Last merge: (949, 12073) -> 15921 (frequency: 3446)
+2025-12-02 00:18:43,330 - rustbpe - [32m[1mINFO[0m - Progress: [1m25%[0m (16318/65271 merges) - Last merge: (420, 263) -> 16573 (frequency: 3226)
+2025-12-02 00:18:43,405 - rustbpe - [32m[1mINFO[0m - Progress: [1m26%[0m (16971/65271 merges) - Last merge: (342, 263) -> 17226 (frequency: 3027)
+2025-12-02 00:18:43,442 - rustbpe - [32m[1mINFO[0m - Progress: [1m27%[0m (17624/65271 merges) - Last merge: (441, 3460) -> 17879 (frequency: 2852)
+2025-12-02 00:18:43,491 - rustbpe - [32m[1mINFO[0m - Progress: [1m28%[0m (18276/65271 merges) - Last merge: (313, 13271) -> 18531 (frequency: 2699)
+2025-12-02 00:18:43,531 - rustbpe - [32m[1mINFO[0m - Progress: [1m29%[0m (18929/65271 merges) - Last merge: (45, 450) -> 19184 (frequency: 2546)
+2025-12-02 00:18:43,561 - rustbpe - [32m[1mINFO[0m - Progress: [1m30%[0m (19582/65271 merges) - Last merge: (428, 3299) -> 19837 (frequency: 2400)
+2025-12-02 00:18:43,585 - rustbpe - [32m[1mINFO[0m - Progress: [1m31%[0m (20235/65271 merges) - Last merge: (313, 274) -> 20490 (frequency: 2276)
+2025-12-02 00:18:43,620 - rustbpe - [32m[1mINFO[0m - Progress: [1m32%[0m (20887/65271 merges) - Last merge: (2804, 293) -> 21142 (frequency: 2155)
+2025-12-02 00:18:43,647 - rustbpe - [32m[1mINFO[0m - Progress: [1m33%[0m (21540/65271 merges) - Last merge: (629, 321) -> 21795 (frequency: 2049)
+2025-12-02 00:18:43,676 - rustbpe - [32m[1mINFO[0m - Progress: [1m34%[0m (22193/65271 merges) - Last merge: (10820, 363) -> 22448 (frequency: 1945)
+2025-12-02 00:18:43,707 - rustbpe - [32m[1mINFO[0m - Progress: [1m35%[0m (22845/65271 merges) - Last merge: (15499, 10886) -> 23100 (frequency: 1850)
+2025-12-02 00:18:43,729 - rustbpe - [32m[1mINFO[0m - Progress: [1m36%[0m (23498/65271 merges) - Last merge: (5037, 756) -> 23753 (frequency: 1758)
+2025-12-02 00:18:43,762 - rustbpe - [32m[1mINFO[0m - Progress: [1m37%[0m (24151/65271 merges) - Last merge: (1811, 1627) -> 24406 (frequency: 1673)
+2025-12-02 00:18:43,787 - rustbpe - [32m[1mINFO[0m - Progress: [1m38%[0m (24803/65271 merges) - Last merge: (10235, 3181) -> 25058 (frequency: 1598)
+2025-12-02 00:18:43,816 - rustbpe - [32m[1mINFO[0m - Progress: [1m39%[0m (25456/65271 merges) - Last merge: (16956, 1121) -> 25711 (frequency: 1525)
+2025-12-02 00:18:43,846 - rustbpe - [32m[1mINFO[0m - Progress: [1m40%[0m (26109/65271 merges) - Last merge: (2419, 636) -> 26364 (frequency: 1462)
+2025-12-02 00:18:43,872 - rustbpe - [32m[1mINFO[0m - Progress: [1m41%[0m (26762/65271 merges) - Last merge: (2549, 1122) -> 27017 (frequency: 1402)
+2025-12-02 00:18:43,900 - rustbpe - [32m[1mINFO[0m - Progress: [1m42%[0m (27414/65271 merges) - Last merge: (99, 1091) -> 27669 (frequency: 1343)
+2025-12-02 00:18:43,927 - rustbpe - [32m[1mINFO[0m - Progress: [1m43%[0m (28067/65271 merges) - Last merge: (216, 170) -> 28322 (frequency: 1288)
+2025-12-02 00:18:43,956 - rustbpe - [32m[1mINFO[0m - Progress: [1m44%[0m (28720/65271 merges) - Last merge: (402, 263) -> 28975 (frequency: 1233)
+2025-12-02 00:18:43,981 - rustbpe - [32m[1mINFO[0m - Progress: [1m45%[0m (29372/65271 merges) - Last merge: (19389, 466) -> 29627 (frequency: 1190)
+2025-12-02 00:18:44,007 - rustbpe - [32m[1mINFO[0m - Progress: [1m46%[0m (30025/65271 merges) - Last merge: (4600, 76) -> 30280 (frequency: 1145)
+2025-12-02 00:18:44,027 - rustbpe - [32m[1mINFO[0m - Progress: [1m47%[0m (30678/65271 merges) - Last merge: (304, 849) -> 30933 (frequency: 1100)
+2025-12-02 00:18:44,052 - rustbpe - [32m[1mINFO[0m - Progress: [1m48%[0m (31331/65271 merges) - Last merge: (5090, 596) -> 31586 (frequency: 1063)
+2025-12-02 00:18:44,070 - rustbpe - [32m[1mINFO[0m - Progress: [1m49%[0m (31983/65271 merges) - Last merge: (21702, 9305) -> 32238 (frequency: 1026)
+2025-12-02 00:18:44,090 - rustbpe - [32m[1mINFO[0m - Progress: [1m50%[0m (32636/65271 merges) - Last merge: (78, 11441) -> 32891 (frequency: 988)
+2025-12-02 00:18:44,113 - rustbpe - [32m[1mINFO[0m - Progress: [1m51%[0m (33289/65271 merges) - Last merge: (17782, 373) -> 33544 (frequency: 956)
+2025-12-02 00:18:44,133 - rustbpe - [32m[1mINFO[0m - Progress: [1m52%[0m (33941/65271 merges) - Last merge: (6872, 474) -> 34196 (frequency: 925)
+2025-12-02 00:18:44,153 - rustbpe - [32m[1mINFO[0m - Progress: [1m53%[0m (34594/65271 merges) - Last merge: (13160, 1816) -> 34849 (frequency: 893)
+2025-12-02 00:18:44,174 - rustbpe - [32m[1mINFO[0m - Progress: [1m54%[0m (35247/65271 merges) - Last merge: (336, 1855) -> 35502 (frequency: 865)
+2025-12-02 00:18:44,203 - rustbpe - [32m[1mINFO[0m - Progress: [1m55%[0m (35900/65271 merges) - Last merge: (446, 276) -> 36155 (frequency: 838)
+2025-12-02 00:18:44,218 - rustbpe - [32m[1mINFO[0m - Progress: [1m56%[0m (36552/65271 merges) - Last merge: (337, 1876) -> 36807 (frequency: 811)
+2025-12-02 00:18:44,234 - rustbpe - [32m[1mINFO[0m - Progress: [1m57%[0m (37205/65271 merges) - Last merge: (27812, 319) -> 37460 (frequency: 787)
+2025-12-02 00:18:44,249 - rustbpe - [32m[1mINFO[0m - Progress: [1m58%[0m (37858/65271 merges) - Last merge: (2181, 2035) -> 38113 (frequency: 763)
+2025-12-02 00:18:44,271 - rustbpe - [32m[1mINFO[0m - Progress: [1m59%[0m (38510/65271 merges) - Last merge: (529, 35912) -> 38765 (frequency: 739)
+2025-12-02 00:18:44,287 - rustbpe - [32m[1mINFO[0m - Progress: [1m60%[0m (39163/65271 merges) - Last merge: (1626, 758) -> 39418 (frequency: 717)
+2025-12-02 00:18:44,312 - rustbpe - [32m[1mINFO[0m - Progress: [1m61%[0m (39816/65271 merges) - Last merge: (2884, 36357) -> 40071 (frequency: 696)
+2025-12-02 00:18:44,326 - rustbpe - [32m[1mINFO[0m - Progress: [1m62%[0m (40469/65271 merges) - Last merge: (22732, 852) -> 40724 (frequency: 676)
+2025-12-02 00:18:44,370 - rustbpe - [32m[1mINFO[0m - Progress: [1m63%[0m (41121/65271 merges) - Last merge: (2718, 80) -> 41376 (frequency: 656)
+2025-12-02 00:18:44,390 - rustbpe - [32m[1mINFO[0m - Progress: [1m64%[0m (41774/65271 merges) - Last merge: (5190, 424) -> 42029 (frequency: 637)
+2025-12-02 00:18:44,410 - rustbpe - [32m[1mINFO[0m - Progress: [1m65%[0m (42427/65271 merges) - Last merge: (1598, 12834) -> 42682 (frequency: 619)
+2025-12-02 00:18:44,430 - rustbpe - [32m[1mINFO[0m - Progress: [1m66%[0m (43079/65271 merges) - Last merge: (1929, 2037) -> 43334 (frequency: 602)
+2025-12-02 00:18:44,442 - rustbpe - [32m[1mINFO[0m - Progress: [1m67%[0m (43732/65271 merges) - Last merge: (37877, 14879) -> 43987 (frequency: 585)
+2025-12-02 00:18:44,460 - rustbpe - [32m[1mINFO[0m - Progress: [1m68%[0m (44385/65271 merges) - Last merge: (29758, 3004) -> 44640 (frequency: 570)
+2025-12-02 00:18:44,472 - rustbpe - [32m[1mINFO[0m - Progress: [1m69%[0m (45037/65271 merges) - Last merge: (12204, 1404) -> 45292 (frequency: 555)
+2025-12-02 00:18:44,490 - rustbpe - [32m[1mINFO[0m - Progress: [1m70%[0m (45690/65271 merges) - Last merge: (2806, 259) -> 45945 (frequency: 540)
+2025-12-02 00:18:44,507 - rustbpe - [32m[1mINFO[0m - Progress: [1m71%[0m (46343/65271 merges) - Last merge: (9018, 34477) -> 46598 (frequency: 527)
+2025-12-02 00:18:44,522 - rustbpe - [32m[1mINFO[0m - Progress: [1m72%[0m (46996/65271 merges) - Last merge: (420, 8269) -> 47251 (frequency: 513)
+2025-12-02 00:18:44,537 - rustbpe - [32m[1mINFO[0m - Progress: [1m73%[0m (47648/65271 merges) - Last merge: (7466, 282) -> 47903 (frequency: 501)
+2025-12-02 00:18:44,549 - rustbpe - [32m[1mINFO[0m - Progress: [1m74%[0m (48301/65271 merges) - Last merge: (438, 4996) -> 48556 (frequency: 489)
+2025-12-02 00:18:44,562 - rustbpe - [32m[1mINFO[0m - Progress: [1m75%[0m (48954/65271 merges) - Last merge: (4604, 276) -> 49209 (frequency: 478)
+2025-12-02 00:18:44,581 - rustbpe - [32m[1mINFO[0m - Progress: [1m76%[0m (49606/65271 merges) - Last merge: (1632, 13872) -> 49861 (frequency: 466)
+2025-12-02 00:18:44,593 - rustbpe - [32m[1mINFO[0m - Progress: [1m77%[0m (50259/65271 merges) - Last merge: (3250, 8184) -> 50514 (frequency: 455)
+2025-12-02 00:18:44,607 - rustbpe - [32m[1mINFO[0m - Progress: [1m78%[0m (50912/65271 merges) - Last merge: (560, 3010) -> 51167 (frequency: 445)
+2025-12-02 00:18:44,618 - rustbpe - [32m[1mINFO[0m - Progress: [1m79%[0m (51565/65271 merges) - Last merge: (377, 3255) -> 51820 (frequency: 435)
+2025-12-02 00:18:44,636 - rustbpe - [32m[1mINFO[0m - Progress: [1m80%[0m (52217/65271 merges) - Last merge: (37215, 1508) -> 52472 (frequency: 426)
+2025-12-02 00:18:44,647 - rustbpe - [32m[1mINFO[0m - Progress: [1m81%[0m (52870/65271 merges) - Last merge: (14361, 31789) -> 53125 (frequency: 417)
+2025-12-02 00:18:44,659 - rustbpe - [32m[1mINFO[0m - Progress: [1m82%[0m (53523/65271 merges) - Last merge: (18450, 285) -> 53778 (frequency: 408)
+2025-12-02 00:18:44,670 - rustbpe - [32m[1mINFO[0m - Progress: [1m83%[0m (54175/65271 merges) - Last merge: (18546, 431) -> 54430 (frequency: 399)
+2025-12-02 00:18:44,681 - rustbpe - [32m[1mINFO[0m - Progress: [1m84%[0m (54828/65271 merges) - Last merge: (1191, 105) -> 55083 (frequency: 390)
+2025-12-02 00:18:44,694 - rustbpe - [32m[1mINFO[0m - Progress: [1m85%[0m (55481/65271 merges) - Last merge: (377, 112) -> 55736 (frequency: 382)
+2025-12-02 00:18:44,706 - rustbpe - [32m[1mINFO[0m - Progress: [1m86%[0m (56134/65271 merges) - Last merge: (1554, 97) -> 56389 (frequency: 374)
+2025-12-02 00:18:44,721 - rustbpe - [32m[1mINFO[0m - Progress: [1m87%[0m (56786/65271 merges) - Last merge: (35419, 791) -> 57041 (frequency: 366)
+2025-12-02 00:18:44,734 - rustbpe - [32m[1mINFO[0m - Progress: [1m88%[0m (57439/65271 merges) - Last merge: (1149, 97) -> 57694 (frequency: 358)
+2025-12-02 00:18:44,744 - rustbpe - [32m[1mINFO[0m - Progress: [1m89%[0m (58092/65271 merges) - Last merge: (3105, 755) -> 58347 (frequency: 351)
+2025-12-02 00:18:44,759 - rustbpe - [32m[1mINFO[0m - Progress: [1m90%[0m (58744/65271 merges) - Last merge: (701, 44294) -> 58999 (frequency: 344)
+2025-12-02 00:18:44,772 - rustbpe - [32m[1mINFO[0m - Progress: [1m91%[0m (59397/65271 merges) - Last merge: (441, 431) -> 59652 (frequency: 337)
+2025-12-02 00:18:44,784 - rustbpe - [32m[1mINFO[0m - Progress: [1m92%[0m (60050/65271 merges) - Last merge: (111, 69) -> 60305 (frequency: 330)
+2025-12-02 00:18:44,795 - rustbpe - [32m[1mINFO[0m - Progress: [1m93%[0m (60703/65271 merges) - Last merge: (313, 25817) -> 60958 (frequency: 323)
+2025-12-02 00:18:44,805 - rustbpe - [32m[1mINFO[0m - Progress: [1m94%[0m (61355/65271 merges) - Last merge: (5375, 7100) -> 61610 (frequency: 317)
+2025-12-02 00:18:44,816 - rustbpe - [32m[1mINFO[0m - Progress: [1m95%[0m (62008/65271 merges) - Last merge: (3460, 122) -> 62263 (frequency: 311)
+2025-12-02 00:18:44,827 - rustbpe - [32m[1mINFO[0m - Progress: [1m96%[0m (62661/65271 merges) - Last merge: (4719, 1622) -> 62916 (frequency: 305)
+2025-12-02 00:18:44,836 - rustbpe - [32m[1mINFO[0m - Progress: [1m97%[0m (63313/65271 merges) - Last merge: (58949, 46565) -> 63568 (frequency: 300)
+2025-12-02 00:18:44,846 - rustbpe - [32m[1mINFO[0m - Progress: [1m98%[0m (63966/65271 merges) - Last merge: (45, 391) -> 64221 (frequency: 293)
+2025-12-02 00:18:44,858 - rustbpe - [32m[1mINFO[0m - Progress: [1m99%[0m (64619/65271 merges) - Last merge: (1588, 18644) -> 64874 (frequency: 288)
+2025-12-02 00:18:44,867 - rustbpe - [32m[1mINFO[0m - Progress: [1m100%[0m (65271/65271 merges) - Last merge: (1594, 552) -> 65526 (frequency: 283)
+2025-12-02 00:18:44,867 - rustbpe - [32m[1mINFO[0m - Finished training: 65271 merges completed
+Training time: 39.00s
 Saved tokenizer encoding to /root/.cache/nanochat/tokenizer/tokenizer.pkl
 Saved token_bytes to /root/.cache/nanochat/tokenizer/token_bytes.pt
 
@@ -456,6 +458,8 @@ science    1112     [91m249    [0m [91m4.47   [0m [92m225    [0m [92m4.94
 fwe-train  4208518  [91m874799 [0m [91m4.81   [0m [92m856901 [0m [92m4.91   [0m [92m   +2.0%[0m     Ours      
 fwe-val    4908443  [91m1029691[0m [91m4.77   [0m [92m1010356[0m [92m4.86   [0m [92m   +1.9%[0m     Ours      
 Waiting for dataset download to complete...
+/root/nanochat/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
 
                                                        █████                █████
                                                       ░░███                ░░███
@@ -466,414 +470,83 @@ Waiting for dataset download to complete...
      ████ █████░░████████ ████ █████░░██████ ░░██████  ████ █████░░███████  ░░█████
     ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░   ░░░░░
     
-Overriding: depth = 20
-Overriding: run = dummy
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/nanochat/scripts/base_train.py", line 70, in <module>
+    exec(open(os.path.join('nanochat', 'configurator.py')).read()) # overrides from command line or config file
+  File "<string>", line 29, in <module>
+AssertionError
+[W1202 00:18:52.772725090 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
 Autodetected device type: cuda
 /root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
   _C._set_float32_matmul_precision(precision)
-2025-12-01 23:42:21,729 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-Vocab size: 65,536
-num_layers: 20
-model_dim: 1280
-num_heads: 10
-num_kv_heads: 10
-Tokens / micro-batch / rank: 32 x 2048 = 65,536
-Tokens / micro-batch: 65,536
-Total batch size 524,288 => gradient accumulation steps: 8
-Number of parameters: 560,988,160
-Estimated FLOPs per token: 3.491758e+09
-Calculated number of iterations from target data:param ratio: 21,400
-Total number of training tokens: 11,219,763,200
-Tokens : Params ratio: 20.00
-Total training FLOPs estimate: 3.917670e+19
-Scaling the LR for the AdamW parameters ∝1/√(1280/768) = 0.774597
-Muon: Grouping 80 params of shape torch.Size([1280, 1280]), device cuda:0, dtype torch.float32
-Muon: Grouping 20 params of shape torch.Size([1280, 5120]), device cuda:0, dtype torch.float32
-Muon: Grouping 20 params of shape torch.Size([5120, 1280]), device cuda:0, dtype torch.float32
-Step 00000 | Validation bpb: 3.3015
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/base_train.py", line 308, in <module>
-[rank0]:     loss = model(x, y)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 414, in __call__
-[rank0]:     return super().__call__(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 832, in compile_wrapper
-[rank0]:     return fn(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
-[rank0]:     return self._call_impl(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
-[rank0]:     return forward_call(*args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/gpt.py", line 244, in forward
-[rank0]:     def forward(self, idx, targets=None, kv_cache=None, loss_reduction='mean'):
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 1044, in _fn
-[rank0]:     return fn(*args, **kwargs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1130, in forward
-[rank0]:     return compiled_fn(full_args)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 339, in runtime_wrapper
-[rank0]:     all_outs = call_func_at_runtime_with_args(
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 129, in call_func_at_runtime_with_args
-[rank0]:     out = normalize_as_list(f(args))
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 103, in g
-[rank0]:     return f(*args)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/autograd/function.py", line 581, in apply
-[rank0]:     return super().apply(*args, **kwargs)  # type: ignore[misc]
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 2118, in forward
-[rank0]:     fw_outs = call_func_at_runtime_with_args(
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py", line 129, in call_func_at_runtime_with_args
-[rank0]:     out = normalize_as_list(f(args))
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 526, in wrapper
-[rank0]:     return compiled_fn(runtime_args)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/runtime_wrappers.py", line 724, in inner_fn
-[rank0]:     outs = compiled_fn(args)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/output_code.py", line 613, in __call__
-[rank0]:     return self.current_callable(inputs)
-[rank0]:   File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/_inductor/utils.py", line 2962, in run
-[rank0]:     out = model(new_inputs)
-[rank0]:   File "/tmp/torchinductor_root/it/citgu5z5erg4ufqxhkvihbln3n6rvr3xaodv46n4coami3l3f3gz.py", line 2579, in call
-[rank0]:     buf557 = empty_strided_cuda((32, 2048, 1280), (2621440, 1280, 1), torch.bfloat16)
-[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacity of 47.37 GiB of which 121.62 MiB is free. Including non-PyTorch memory, this process has 47.24 GiB memory in use. Of the allocated memory 46.28 GiB is allocated by PyTorch, and 17.11 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
-[rank0]:[W1201 23:44:30.260416220 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-[rank0]:[W1201 23:44:31.780350706 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-E1201 23:44:32.388000 5750 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 5758) of binary: /root/nanochat/.venv/bin/python3
+2025-12-02 00:18:55,104 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
 Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.base_train FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:44:32
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 5758)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/nanochat/scripts/base_loss.py", line 30, in <module>
+    model, tokenizer, meta = load_model("base", device, phase="eval", model_tag=model_tag, step=model_step)
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
+    return load_model_from_dir(checkpoints_dir, *args, **kwargs)
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
+    model_tag = find_largest_model(checkpoints_dir)
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
+    model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
+FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/base_checkpoints'
 Autodetected device type: cuda
 /root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
   _C._set_float32_matmul_precision(precision)
-2025-12-01 23:44:36,060 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/base_loss.py", line 30, in <module>
-[rank0]:     model, tokenizer, meta = load_model("base", device, phase="eval", model_tag=model_tag, step=model_step)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/base_checkpoints'
-[rank0]:[W1201 23:44:36.186419436 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-E1201 23:44:37.476000 6560 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6568) of binary: /root/nanochat/.venv/bin/python3
+2025-12-02 00:18:57,709 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
 Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.base_loss FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:44:37
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6568)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-Autodetected device type: cuda
-/root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
-  _C._set_float32_matmul_precision(precision)
-2025-12-01 23:44:41,140 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/base_eval.py", line 212, in <module>
-[rank0]:     main()
-[rank0]:   File "/root/nanochat/scripts/base_eval.py", line 169, in main
-[rank0]:     model, tokenizer, meta = load_model("base", device, phase="eval")
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/base_checkpoints'
-[rank0]:[W1201 23:44:41.258127367 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-E1201 23:44:42.594000 6582 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6590) of binary: /root/nanochat/.venv/bin/python3
-Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.base_eval FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:44:42
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6590)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/nanochat/scripts/base_eval.py", line 212, in <module>
+    main()
+  File "/root/nanochat/scripts/base_eval.py", line 169, in main
+    model, tokenizer, meta = load_model("base", device, phase="eval")
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
+    return load_model_from_dir(checkpoints_dir, *args, **kwargs)
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
+    model_tag = find_largest_model(checkpoints_dir)
+  File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
+    model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
+FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/base_checkpoints'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 2235k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2235k  100 2235k    0     0  2053k      0  0:00:01  0:00:01 --:--:-- 2054k
-Overriding: run = dummy
-Autodetected device type: cuda
-/root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
-  _C._set_float32_matmul_precision(precision)
-2025-12-01 23:44:48,000 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/mid_train.py", line 69, in <module>
-[rank0]:     model, tokenizer, meta = load_model("base", device, phase="train", model_tag=model_tag, step=step)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/base_checkpoints'
-[rank0]:[W1201 23:44:48.208705017 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-[rank0]:[W1201 23:44:49.167924293 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-E1201 23:44:49.474000 6606 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6614) of binary: /root/nanochat/.venv/bin/python3
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 81 2235k   81 1818k    0     0  1799k      0  0:00:01  0:00:01 --:--:-- 1798k100 2235k  100 2235k    0     0  2209k      0  0:00:01  0:00:01 --:--:-- 2208k
+/root/nanochat/.venv/lib/python3.10/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
 Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.mid_train FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:44:49
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6614)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-Autodetected device type: cuda
-/root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
-  _C._set_float32_matmul_precision(precision)
-^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A2025-12-01 23:44:53,438 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/chat_eval.py", line 205, in <module>
-[rank0]:     model, tokenizer, meta = load_model(args.source, device, phase="eval", model_tag=args.model_tag, step=args.step)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/mid_checkpoints'
-[rank0]:[W1201 23:44:53.613906078 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[BE1201 23:44:54.827000 6630 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6639) of binary: /root/nanochat/.venv/bin/python3
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/nanochat/scripts/mid_train.py", line 55, in <module>
+    exec(open(os.path.join('nanochat', 'configurator.py')).read()) # overrides from command line or config file
+  File "<string>", line 29, in <module>
+AssertionError
+[W1202 00:19:02.657876357 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+usage: chat_eval.py [-h] -i SOURCE [-a TASK_NAME] [-d {float32,bfloat16}] [-t TEMPERATURE] [-m MAX_NEW_TOKENS] [-n NUM_SAMPLES] [-k TOP_K] [-b BATCH_SIZE] [-g MODEL_TAG] [-s STEP] [-x MAX_PROBLEMS] [--device-type {cuda,cpu,mps}]
+chat_eval.py: error: the following arguments are required: -i/--source
 Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.chat_eval FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:44:54
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6639)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-^[[B^[[B^[[B^[[B^[[BOverriding: run = dummy
-Autodetected device type: cuda
-/root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
-  _C._set_float32_matmul_precision(precision)
-2025-12-01 23:44:59,298 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/chat_sft.py", line 76, in <module>
-[rank0]:     model, tokenizer, meta = load_model(source, device, phase="train", model_tag=model_tag, step=step)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/mid_checkpoints'
-[rank0]:[W1201 23:44:59.516129295 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-[rank0]:[W1201 23:45:00.478296975 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
-E1201 23:45:00.846000 6653 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6661) of binary: /root/nanochat/.venv/bin/python3
-Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.chat_sft FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:45:00
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6661)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
-Autodetected device type: cuda
-/root/nanochat/.venv/lib/python3.10/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
-  _C._set_float32_matmul_precision(precision)
-2025-12-01 23:45:04,721 - nanochat.common - [32m[1mINFO[0m - Distributed world size: 1
-[rank0]: Traceback (most recent call last):
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
-[rank0]:     return _run_code(code, main_globals, None,
-[rank0]:   File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
-[rank0]:     exec(code, run_globals)
-[rank0]:   File "/root/nanochat/scripts/chat_eval.py", line 205, in <module>
-[rank0]:     model, tokenizer, meta = load_model(args.source, device, phase="eval", model_tag=args.model_tag, step=args.step)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 151, in load_model
-[rank0]:     return load_model_from_dir(checkpoints_dir, *args, **kwargs)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 130, in load_model_from_dir
-[rank0]:     model_tag = find_largest_model(checkpoints_dir)
-[rank0]:   File "/root/nanochat/nanochat/checkpoint_manager.py", line 98, in find_largest_model
-[rank0]:     model_tags = [f for f in os.listdir(checkpoint_dir) if os.path.isdir(os.path.join(checkpoint_dir, f))]
-[rank0]: FileNotFoundError: [Errno 2] No such file or directory: '/root/.cache/nanochat/chatsft_checkpoints'
-[rank0]:[W1201 23:45:04.879074927 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
-E1201 23:45:06.216000 6677 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 6688) of binary: /root/nanochat/.venv/bin/python3
-Traceback (most recent call last):
-  File "/root/nanochat/.venv/bin/torchrun", line 10, in <module>
-    sys.exit(main())
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
-    return f(*args, **kwargs)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 936, in main
-    run(args)
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 927, in run
-    elastic_launch(
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 156, in __call__
-    return launch_agent(self._config, self._entrypoint, list(args))
-  File "/root/nanochat/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
-    raise ChildFailedError(
-torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
-============================================================
-scripts.chat_eval FAILED
-------------------------------------------------------------
-Failures:
-  <NO_OTHER_FAILURES>
-------------------------------------------------------------
-Root Cause (first observed failure):
-[0]:
-  time      : 2025-12-01_23:45:06
-  host      : ml-ai-ubuntu-gpu-6000adax1-48gb-tor1
-  rank      : 0 (local_rank: 0)
-  exitcode  : 1 (pid: 6688)
-  error_file: <N/A>
-  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
-============================================================
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/.local/share/uv/python/cpython-3.10.19-linux-x86_64-gnu/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/nanochat/scripts/chat_sft.py", line 60, in <module>
+    exec(open(os.path.join('nanochat', 'configurator.py')).read()) # overrides from command line or config file
+  File "<string>", line 29, in <module>
+AssertionError
+[W1202 00:19:09.207687188 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+usage: chat_eval.py [-h] -i SOURCE [-a TASK_NAME] [-d {float32,bfloat16}] [-t TEMPERATURE] [-m MAX_NEW_TOKENS] [-n NUM_SAMPLES] [-k TOP_K] [-b BATCH_SIZE] [-g MODEL_TAG] [-s STEP] [-x MAX_PROBLEMS] [--device-type {cuda,cpu,mps}]
+chat_eval.py: error: the following arguments are required: -i/--source
 Generating report to /root/.cache/nanochat/report/report.md
 Warning: /root/.cache/nanochat/report/base-model-training.md does not exist, skipping
 Warning: /root/.cache/nanochat/report/base-model-loss.md does not exist, skipping
