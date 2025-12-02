@@ -6,6 +6,9 @@ import os
 import time
 import argparse
 import torch
+torch.backends.cuda.matmul.allow_tf32 = True
+torch.backends.cudnn.allow_tf32 = True
+
 from nanochat.tokenizer import RustBPETokenizer
 from nanochat.common import get_base_dir
 from nanochat.dataset import parquets_iter_batched
