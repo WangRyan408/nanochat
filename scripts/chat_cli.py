@@ -6,8 +6,12 @@ python -m scripts.chat_cli -i mid
 
 With RAG (Retrieval Augmented Generation):
 python -m scripts.chat_cli --rag --faiss-path medical_index.faiss --metadata-path medical_metadata.pkl
+
+Batch processing mode:
+python -m scripts.chat_cli --rag --prompts-file rag/queries.json --output-file results.json --max-prompts 100
 """
 import argparse
+import json
 import pickle
 import torch
 import faiss
@@ -32,6 +36,11 @@ parser.add_argument('--rag', action='store_true', help='Enable RAG (Retrieval Au
 parser.add_argument('--faiss-path', type=str, default='medical_index.faiss', help='Path to FAISS index file')
 parser.add_argument('--metadata-path', type=str, default='medical_metadata.pkl', help='Path to metadata pickle file')
 parser.add_argument('--rag-k', type=int, default=5, help='Number of documents to retrieve for RAG context')
+# Batch processing arguments
+parser.add_argument('--prompts-file', type=str, default='', help='JSON file with prompts for batch processing (expects array with "query" field)')
+parser.add_argument('--output-file', type=str, default='batch_results.json', help='Output JSON file for batch results')
+parser.add_argument('--max-prompts', type=int, default=None, help='Maximum number of prompts to process in batch mode')
+parser.add_argument('--max-tokens', type=int, default=256, help='Maximum tokens to generate per response')
 args = parser.parse_args()
 
 # Init the model and tokenizer
@@ -128,6 +137,105 @@ if args.rag:
         k=args.rag_k
     )
 
+# ============================================================================
+# BATCH PROCESSING MODE
+# ============================================================================
+if args.prompts_file:
+    print(f"\nBatch Processing Mode")
+    print("-" * 50)
+    
+    # Load prompts from JSON file
+    with open(args.prompts_file, 'r') as f:
+        prompts_data = json.load(f)
+    
+    # Limit number of prompts if specified
+    if args.max_prompts is not None:
+        prompts_data = prompts_data[:args.max_prompts]
+    
+    print(f"Loaded {len(prompts_data)} prompts from {args.prompts_file}")
+    if args.rag:
+        print(f"RAG: enabled (k={args.rag_k})")
+    print("-" * 50)
+    
+    results = []
+    
+    for i, item in enumerate(prompts_data):
+        # Extract the query text
+        if isinstance(item, dict):
+            user_input = item.get('query', item.get('prompt', str(item)))
+            patient_id = item.get('patient_id', None)
+            ground_truth = item.get('ground_truth', None)
+            features = item.get('features', None)
+        else:
+            user_input = str(item)
+            patient_id = None
+            ground_truth = None
+            features = None
+        
+        print(f"\n[{i+1}/{len(prompts_data)}] Processing...", end="", flush=True)
+        
+        # RAG retrieval if enabled
+        augmented_input = user_input
+        if rag_retriever is not None:
+            rag_results = rag_retriever.retrieve(user_input)
+            rag_context = rag_retriever.format_context(rag_results)
+            if rag_context:
+                augmented_input = f"{rag_context}\n\n---\n\nUser question: {user_input}"
+        
+        # Build conversation tokens (fresh for each prompt)
+        conversation_tokens = [bos]
+        conversation_tokens.append(user_start)
+        conversation_tokens.extend(tokenizer.encode(augmented_input))
+        conversation_tokens.append(user_end)
+        conversation_tokens.append(assistant_start)
+        
+        # Generate response
+        generate_kwargs = {
+            "num_samples": 1,
+            "max_tokens": args.max_tokens,
+            "temperature": args.temperature,
+            "top_k": args.top_k,
+        }
+        response_tokens = []
+        with autocast_ctx:
+            for token_column, token_masks in engine.generate(conversation_tokens, **generate_kwargs):
+                token = token_column[0]
+                response_tokens.append(token)
+        
+        # Decode response
+        response_text = tokenizer.decode(response_tokens)
+        print(f" done ({len(response_tokens)} tokens)")
+        
+        # Build result entry
+        result_entry = {
+            "prompt": user_input,
+            "response": response_text,
+        }
+        if patient_id is not None:
+            result_entry["patient_id"] = patient_id
+        if ground_truth is not None:
+            result_entry["ground_truth"] = ground_truth
+        if features is not None:
+            result_entry["features"] = features
+        
+        results.append(result_entry)
+    
+    # Save results
+    with open(args.output_file, 'w') as f:
+        json.dump(results, f, indent=2)
+    
+    print(f"\n{'='*50}")
+    print(f"Batch processing complete!")
+    print(f"Processed: {len(results)} prompts")
+    print(f"Results saved to: {args.output_file}")
+    print(f"{'='*50}")
+    
+    # Exit after batch processing
+    exit(0)
+
+# ============================================================================
+# INTERACTIVE MODE
+# ============================================================================
 print("\nNanoChat Interactive Mode")
 print("-" * 50)
 print("Type 'quit' or 'exit' to end the conversation")
@@ -182,7 +290,7 @@ while True:
     conversation_tokens.append(assistant_start)
     generate_kwargs = {
         "num_samples": 1,
-        "max_tokens": 256,
+        "max_tokens": args.max_tokens,
         "temperature": args.temperature,
         "top_k": args.top_k,
     }
