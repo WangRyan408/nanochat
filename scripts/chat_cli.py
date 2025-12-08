@@ -202,6 +202,10 @@ if args.prompts_file:
                 token = token_column[0]
                 response_tokens.append(token)
         
+        # Ensure assistant_end token is present (may be missing if max_tokens was hit)
+        if response_tokens and response_tokens[-1] != assistant_end:
+            response_tokens.append(assistant_end)
+        
         # Decode response
         response_text = tokenizer.decode(response_tokens)
         print(f" done ({len(response_tokens)} tokens)")

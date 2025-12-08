@@ -22,7 +22,7 @@ EXCLUDE_COLUMNS = {
 }
 
 # Query template for survival prediction
-QUERY_TEMPLATE = """Given the following patient information, predict the survival outcome:
+QUERY_TEMPLATE = """Given the following patient information, predict if the patient will die from cancer or survive:
 
 Patient ID: {patient_id}
 Primary Site: {primary_site_labeled}
