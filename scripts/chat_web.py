@@ -13,6 +13,9 @@ python -m scripts.chat_web
 - 4 GPUs
 python -m scripts.chat_web --num-gpus 4
 
+- with RAG (Retrieval Augmented Generation)
+python -m scripts.chat_web --rag --faiss-path medical_index.faiss --metadata-path medical_metadata.pkl --rag-k 5
+
 To chat, open the URL printed in the console. (If on cloud box, make sure to use public IP)
 
 Endpoints:
@@ -20,6 +23,13 @@ Endpoints:
   POST /chat/completions - Chat API (streaming only)
   GET  /health     - Health check with worker pool status
   GET  /stats      - Worker pool statistics and GPU utilization
+  GET  /rag/status - RAG retriever status and configuration
+
+RAG (Retrieval Augmented Generation):
+  When enabled with --rag, the server loads a FAISS index and metadata file.
+  For each chat request, the last user message is used to retrieve similar
+  documents from the index. Retrieved context is prepended to the first user
+  message to augment the model's response with relevant information.
 
 Abuse Prevention:
   - Maximum 500 messages per request
@@ -33,10 +43,14 @@ Abuse Prevention:
 import argparse
 import json
 import os
+import pickle
 import torch
 import asyncio
 import logging
 import random
+import faiss
+import numpy as np
+from sentence_transformers import SentenceTransformer
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -72,6 +86,11 @@ parser.add_argument('-p', '--port', type=int, default=8000, help='Port to run th
 parser.add_argument('-d', '--dtype', type=str, default='bfloat16', choices=['float32', 'bfloat16'])
 parser.add_argument('--device-type', type=str, default='', choices=['cuda', 'cpu', 'mps'], help='Device type for evaluation: cuda|cpu|mps. empty => autodetect')
 parser.add_argument('--host', type=str, default='0.0.0.0', help='Host to bind the server to')
+# RAG arguments
+parser.add_argument('--rag', action='store_true', help='Enable RAG (Retrieval Augmented Generation)')
+parser.add_argument('--faiss-path', type=str, default='medical_index.faiss', help='Path to FAISS index file')
+parser.add_argument('--metadata-path', type=str, default='medical_metadata.pkl', help='Path to metadata pickle file')
+parser.add_argument('--rag-k', type=int, default=5, help='Number of documents to retrieve for RAG context')
 args = parser.parse_args()
 
 # Configure logging for conversation traffic
@@ -85,6 +104,75 @@ logger = logging.getLogger(__name__)
 device_type = autodetect_device_type() if args.device_type == "" else args.device_type
 ddp, ddp_rank, ddp_local_rank, ddp_world_size, device = compute_init(device_type)
 ptdtype = torch.float32 if args.dtype == 'float32' else torch.bfloat16
+
+class RAGRetriever:
+    """RAG retriever using FAISS index and SentenceTransformer embeddings."""
+
+    def __init__(self, faiss_path: str, metadata_path: str, k: int = 5):
+        print(f"Loading RAG components...")
+        
+        # Load FAISS index
+        print(f"  Loading FAISS index from {faiss_path}...")
+        self.index = faiss.read_index(faiss_path)
+        print(f"  FAISS index loaded with {self.index.ntotal} vectors")
+        
+        # Load metadata
+        print(f"  Loading metadata from {metadata_path}...")
+        with open(metadata_path, 'rb') as f:
+            self.metadata = pickle.load(f)
+        self.texts = self.metadata['texts']
+        self.original_data = self.metadata.get('original_data', [])
+        print(f"  Metadata loaded with {len(self.texts)} entries")
+        
+        # Load embedding model (same as used for indexing)
+        print(f"  Loading SentenceTransformer embedding model...")
+        self.embed_model = SentenceTransformer('NeuML/pubmedbert-base-embeddings')
+        print(f"  RAG components ready!")
+        
+        self.k = k
+
+    def retrieve(self, query: str, k: int = None) -> list[dict]:
+        """Retrieve the top-k most similar documents for a query."""
+        k = k or self.k
+        
+        # Embed the query (normalize to match index)
+        query_embedding = self.embed_model.encode(
+            [query],
+            convert_to_numpy=True,
+            normalize_embeddings=True
+        ).astype(np.float32)
+        
+        # Search the index
+        scores, indices = self.index.search(query_embedding, k)
+        
+        # Gather results
+        results = []
+        for i, (score, idx) in enumerate(zip(scores[0], indices[0])):
+            if idx < 0:  # FAISS returns -1 for missing results
+                continue
+            result = {
+                'rank': i + 1,
+                'score': float(score),
+                'text': self.texts[idx],
+            }
+            # Include original data if available
+            if idx < len(self.original_data):
+                result['data'] = self.original_data[idx]
+            results.append(result)
+        
+        return results
+
+    def format_context(self, results: list[dict]) -> str:
+        """Format retrieved results into a context string for the LLM."""
+        if not results:
+            return ""
+        
+        context_parts = ["Here is relevant medical data from similar cases:\n"]
+        for r in results:
+            context_parts.append(f"[Case {r['rank']} (similarity: {r['score']:.3f})]\n{r['text']}\n")
+        
+        context_parts.append("\nUse the above information to help answer the user's question.")
+        return "\n".join(context_parts)
 
 @dataclass
 class Worker:
@@ -226,7 +314,20 @@ async def lifespan(app: FastAPI):
     print("Loading nanochat models across GPUs...")
     app.state.worker_pool = WorkerPool(num_gpus=args.num_gpus)
     await app.state.worker_pool.initialize(args.source, model_tag=args.model_tag, step=args.step)
+    
+    # Initialize RAG retriever if enabled
+    if args.rag:
+        app.state.rag_retriever = RAGRetriever(
+            faiss_path=args.faiss_path,
+            metadata_path=args.metadata_path,
+            k=args.rag_k
+        )
+    else:
+        app.state.rag_retriever = None
+    
     print(f"Server ready at http://localhost:{args.port}")
+    if args.rag:
+        print(f"RAG enabled with k={args.rag_k}")
     yield
 
 app = FastAPI(lifespan=lifespan)
@@ -323,6 +424,22 @@ async def chat_completions(request: ChatRequest):
         logger.info(f"[{message.role.upper()}]: {message.content}")
     logger.info("-"*20)
 
+    # RAG retrieval: use the last user message as the query
+    rag_context = ""
+    rag_retriever = app.state.rag_retriever
+    if rag_retriever is not None:
+        # Find the last user message for retrieval
+        last_user_message = None
+        for msg in reversed(request.messages):
+            if msg.role == "user":
+                last_user_message = msg.content
+                break
+        
+        if last_user_message:
+            results = rag_retriever.retrieve(last_user_message)
+            rag_context = rag_retriever.format_context(results)
+            logger.info(f"[RAG] Retrieved {len(results)} documents for query")
+
     # Acquire a worker from the pool (will wait if all are busy)
     worker_pool = app.state.worker_pool
     worker = await worker_pool.acquire_worker()
@@ -336,10 +453,19 @@ async def chat_completions(request: ChatRequest):
         assistant_end = worker.tokenizer.encode_special("<|assistant_end|>")
 
         conversation_tokens = [bos]
+        
+        # If RAG context exists, prepend it as a system-like context to the first user message
+        first_user_processed = False
         for message in request.messages:
             if message.role == "user":
                 conversation_tokens.append(user_start)
-                conversation_tokens.extend(worker.tokenizer.encode(message.content))
+                # Prepend RAG context to the first user message
+                if rag_context and not first_user_processed:
+                    augmented_content = f"{rag_context}\n\n---\n\nUser question: {message.content}"
+                    conversation_tokens.extend(worker.tokenizer.encode(augmented_content))
+                    first_user_processed = True
+                else:
+                    conversation_tokens.extend(worker.tokenizer.encode(message.content))
                 conversation_tokens.append(user_end)
             elif message.role == "assistant":
                 conversation_tokens.append(assistant_start)
@@ -408,8 +534,29 @@ async def stats():
         ]
     }
 
+@app.get("/rag/status")
+async def rag_status():
+    """Get RAG retriever status and configuration."""
+    rag_retriever = getattr(app.state, 'rag_retriever', None)
+    if rag_retriever is None:
+        return {
+            "enabled": False,
+            "message": "RAG is not enabled. Start server with --rag flag to enable."
+        }
+    return {
+        "enabled": True,
+        "k": rag_retriever.k,
+        "num_vectors": rag_retriever.index.ntotal,
+        "num_texts": len(rag_retriever.texts),
+        "embedding_model": "NeuML/pubmedbert-base-embeddings"
+    }
+
 if __name__ == "__main__":
     import uvicorn
     print(f"Starting NanoChat Web Server")
     print(f"Temperature: {args.temperature}, Top-k: {args.top_k}, Max tokens: {args.max_tokens}")
+    if args.rag:
+        print(f"RAG: enabled (k={args.rag_k}, index={args.faiss_path})")
+    else:
+        print(f"RAG: disabled (use --rag to enable)")
     uvicorn.run(app, host=args.host, port=args.port)
