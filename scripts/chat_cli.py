@@ -40,7 +40,7 @@ parser.add_argument('--rag-k', type=int, default=5, help='Number of documents to
 parser.add_argument('--prompts-file', type=str, default='', help='JSON file with prompts for batch processing (expects array with "query" field)')
 parser.add_argument('--output-file', type=str, default='batch_results.json', help='Output JSON file for batch results')
 parser.add_argument('--max-prompts', type=int, default=None, help='Maximum number of prompts to process in batch mode')
-parser.add_argument('--max-tokens', type=int, default=256, help='Maximum tokens to generate per response')
+parser.add_argument('--max-tokens', type=int, default=1024, help='Maximum tokens to generate per response')
 args = parser.parse_args()
 
 # Init the model and tokenizer
