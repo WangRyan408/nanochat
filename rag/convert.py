@@ -19,23 +19,25 @@ EXCLUDE_COLUMNS = {
     'survival_years',
     'is_alive',
     'died_from_cancer',
+    'patient_id',
+    'primary_site_labeled',
+    'year_diagnosis',
+    'histology_code',
+    'site_recode',
+    'age_category',
+    'age_group',
+
+    
 }
 
 # Query template for survival prediction
 QUERY_TEMPLATE = """Given the following patient information, predict if the patient will die from cancer or survive:
 
-Patient ID: {patient_id}
-Primary Site: {primary_site_labeled}
-Age Group: {age_group}
 Age (numeric): {age_numeric}
-Age Category: {age_category}
 Race: {race}
 Sex: {sex}
-Year of Diagnosis: {year_diagnosis}
 Treatment Era: {treatment_era}
-Site Recode: {site_recode}
 Cancer System: {cancer_system}
-Histology Code: {histology_code}
 Behavior: {behavior}
 
 Based on this information, what is the predicted survival outcome for this patient? Return a 1 for survival and 0 for death."""

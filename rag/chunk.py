@@ -20,23 +20,17 @@ def row_to_text(row: pd.Series) -> str:
     died_from_cancer_text = "Yes" if died_from_cancer == 1 else "No" if died_from_cancer == 0 else ''
     
     fields = [
-        f"Primary site: {row.get('primary_site_labeled', '')}",
-        f"Age group: {row.get('age_group', '')}",
-        f"Age numeric: {row.get('age_numeric', '')}",
-        f"Age category: {row.get('age_category', '')}",
+
+        f"Age: {row.get('age_numeric', '')}",
         f"Race: {row.get('race', '')}",
         f"Sex: {row.get('sex', '')}",
-        f"Year of diagnosis: {row.get('year_diagnosis', '')}",
         f"Treatment era: {row.get('treatment_era', '')}",
-        f"Site recode: {row.get('site_recode', '')}",
         f"Cancer system: {row.get('cancer_system', '')}",
-        f"Histology code: {row.get('histology_code', '')}",
         f"Behavior: {row.get('behavior', '')}",
         f"Survival months raw: {row.get('survival_months_raw', '')}",
         f"Survival months: {row.get('survival_months', '')}",
         f"Survival years: {row.get('survival_years', '')}",
         f"Survival category: {row.get('survival_category', '')}",
-        f"Censored status: {row.get('censored_status', '')}",
         f"Vital status: {row.get('vital_status', '')}",
         #f"Cause of death: {row.get('cause_death', '')}",
         f"Died from cancer: {died_from_cancer_text}",
