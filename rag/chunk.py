@@ -52,6 +52,10 @@ logging.info(f"Using device: {device}")
 df = pd.read_csv("./rag/seer_data_train.csv")
 logging.info(f"Loaded dataframe with {len(df)} rows from seer_data_train.csv")
 
+# Exclude rows where is_alive == 0 AND died_from_cancer == 0
+df = df[~((df['is_alive'] == 0) & (df['died_from_cancer'] == 0))]
+logging.info(f"After filtering: {len(df)} rows remaining")
+
 load_start = time.time()
 model = SentenceTransformer('NeuML/pubmedbert-base-embeddings', device=device)
 logging.info(f"Loaded model in {time.time() - load_start:.2f}s")
